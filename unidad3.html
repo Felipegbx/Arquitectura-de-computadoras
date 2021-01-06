@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arquitectura de Computadoras</title>
+        <link rel="stylesheet" href="arqi.css">
+    </head>
+   <body>
+       <header>
+           <h1>Arquitectura de Computadoras</h1>
+           <nav class="navegacion">
+           <ul class="menu">
+            <li><a href="curso.html">ACERCA DEL CURSO</a></li>
+            <li><a href="#">UNIDADES</a>
+                <ul class="submenu">
+                <li><a href="arqi.html">UNIDAD1</a></li>
+                <li><a href="unidad2.html">UNIDAD2</a></li>
+                <li><a href="unidad3.html">UNIDAD3</a></li>
+                <li><a href="unidad4.html">UNIDAD4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">PROCESADORES</a>
+                <ul class="submenu">
+                    <li><a href="index.html">PROCESADORES INTEL</a></li>
+                    <li><a href="Procesadores AMD (Published)/index.html">PROCESADORES AMD</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+       <div id="general">
+           <nav>
+            <h2>Unidad 3: Selección de componentes para ensamble de equipo de cómputo
+            </h2>
+           </nav>
+        <br>
+        <h2>3.1. Chip Set</h2>
+        <br>
+        <br>
+        Un conjunto de chips es un conjunto de componentes electrónicos en un circuito integrado que gestiona el flujo de datos entre el procesador, la memoria y los dispositivos periféricos. Por lo general se encuentra en la placa base de un ordenador. Chipsets generalmente están diseñados para trabajar con una familia específica de los microprocesadores. Debido a que controla las comunicaciones entre el procesador y los dispositivos externos, el chipset tiene un papel crucial en la determinación del rendimiento del sistema.
+        <br>
+        <br>
+        <h3>3.1.1 CPU.</h3>
+        <br>
+        <br>
+        La Unidad Central de Procesamiento (del inglés: Central Processing Unit, CPU) oprocesador, es el componente principal del ordenador y otros dispositivos programables, que interpreta las instrucciones contenidas en los programas y procesa los datos. Las CPU proporcionan la característica fundamental del ordenador digital (laprogramabilidad) y son uno de los componentes necesarios encontrados en losordenadores de cualquier tiempo, junto con la memoria principal y los dispositivos deentrada/salida. Se conoce como microprocesador el CPU que es manufacturado concircuitos integrados. Desde mediados de los años 1970, los microprocesadores de un solo chip han reemplazado casi totalmente todos los tipos de CPU y hoy en día, el término "CPU" es aplicado usualmente a todos los microprocesadores. La expresión "unidad central de proceso" es, en términos generales, un dispositivo lógico que pueden ejecutar complejos programas de ordenador. Esta amplia definición puede fácilmente ser aplicada a muchos de los primeros ordenadores que existieron mucho antes que el término "CPU" estuviera en amplio uso. Sin embargo, el término en sí mismo y su acrónimo han estado en uso en la industria de la Informática por lo menos desde el principio de los años 60. La forma, el diseño y la implementación de las CPU ha cambiado drásticamente desde los primeros ejemplos, pero su operación fundamental ha permanecido bastante similar. Las primeras CPU fueron diseñados a la medida como parte de un ordenador más grande, generalmente un ordenador único en su especie. Sin embargo, este costoso método de diseñar las CPU a la medida, para una aplicación particular, ha desaparecido en gran parte y se ha sustituido por el desarrollo de clases de procesadores baratos y estandarizados adaptados para uno o muchos propósitos. Esta tendencia de estandarización comenzó generalmente en la era de los transistores discretos,ordenadores centrales y microordenadors y fue acelerada rápidamente con la popularización del circuito integrado (IC), éste ha permitido que sean diseñados y fabricados CPU más complejas en espacios pequeños (en la orden de milímetros). Tanto la miniaturización como la estandarización de las CPU han aumentado la presencia de estos dispositivos digitales en la vida moderna mucho más allá de las aplicaciones limitadas de máquinas de computación dedicadas. Los microprocesadores modernos aparecen en todo, desde automóviles, televisores, neveras, calculadoras, aviones, hasta teléfonos móviles o celulares, juguetes, entre otros. En la actualidad muchas personas llaman CPU al armazón del computador (torre), confundiendo de esta manera a los principiantes en el mundo de la computación.
+        <br>
+        <h3>3.1.2 Controlador del Bus.</h3>
+        <br>
+        Encargado de gestionar la memoria RAM, los puertos gráficos (AGP) y el acceso al resto de componentes del chipset, así como la comunicación entre estos y el procesador. Los primeros Northbridge también gestionaban los accesos a los puertos PCI, pero ha pasado con el tiempo a depender del Southbridge.  A destacar en este aspecto la innovación que supuso (y supone) la tecnología utilizada por AMD, en la que la memoria es gestionada directamente por el procesador, descargando al Northbridge de esta labor y permitiendo una gestión de la memoria más rápida y directa.
+        <br>
+        <br>
+        <h3>3.1.3 Puertos de E/S.</h3>
+        <br>
+        En computación, la entrada y salida o E/S (en inglés input/output o I/O), es la comunicación entre un sistema de procesamiento de información, tal como un ordenador, y el mundo exterior, posiblemente un humano u otro sistema de procesamiento de información. Los dispositivos de E/S son utilizados por una persona (u otro sistema) para comunicarse con un ordenador. Por ejemplo, un teclado o un ratón puede ser un dispositivo de entrada para un ordenador, mientras que los monitores e impresoras se consideran los dispositivos de salida para un ordenador. Dispositivos para la comunicación entre computadoras, tales como módems y tarjetas de red , por lo general sirven para entrada y salida
+        <br>
+        <br>
+        <h3>3.1.4 Controlador de Interrupciones.</h3>
+        <br>
+        Interrupción ,interrupción hardware o petición de interrupción es una señal recibida por el procesador de un ordenador, indicando que debe "interrumpir" el curso de ejecución actual y pasar a ejecutar código específico para tratar esta situación.  Una interrupción supone la ejecución temporaria de un programa, para pasar a ejecutar una "subrutina de servicio de interrupción", que pertenece al BIOS .  Las interrupciones surgen de las necesidades que tienen los dispositivos periféricos de enviar información al procesador principal de un sistema de computación. La primera técnica que se empleó fue que el propio procesador se encargara de sondear el dispositivo cada cierto tiempo para averiguar si tenía pendiente alguna comunicación para él. Este método presentaba el inconveniente de ser muy ineficiente, ya que el procesador constantemente consumía tiempo en realizar todas las instrucciones de sondeo.
+        <br>
+        <br>
+        <h3>3.1.5 Controlador de DMA</h3>
+        <br>
+        El controlador DMA descarga las entradas y salidas de datos en periféricos rápidos, ya que el uso de interrupciones se vuelve inadecuado en estos casos. La CPU programa al controlador de DMA, indicando las direcciones de memoria que deben emplear y el tipo de transferencia. Cuando un periférico solicita transferencia de datos mediante DMA, el controlador se lo hace saber al procesador para que dé el visto bueno y acceda a la transferencia usando los buses del sistema.
+        <br>
+        <br>
+        <h3>3.1.6 Circuitos de temporización y control.</h3>
+        <br>
+        El circuito electrónico que más se utiliza tanto en la industria como en circuitería comercial, es el circuito temporizador o de retardo, dentro de la categoría de temporizadores, cabe destacar el más económico y también menos preciso consistente en una resistencia y un condensador, a partir de aquí se puede contar con un sinfín de opciones y posibilidades. En este tutorial se tratarán unos tipos sencillos para adquirir conocimiento de cómo conseguir un retardo en un sistema que no requiera gran precisión y terminaremos por analizar un temporizador de mayores prestaciones y precisión. Cuando necesitamos un temporizador, lo primero que debemos considerar es la necesidad de precisión en el tiempo, base muy importante para determinar los elementos que vamos a utilizar en su concepción y diseño. Como se ha mencionado anteriormente un temporizador básicamente consiste en un elemento que se activa o desactiva después de un tiempo más o menos preestablecido. De esta manera podemos determinar el parámetro relacionado con el tiempo que ha de transcurrir para que el circuito susceptible de temporizarse, se detenga o empiece a funcionar o simplemente cierre un contacto o lo abra.
+        <br>
+        <br>
+        <h3>3.1.7. Controladores de video.</h3>
+        <br>
+        La tarjeta de video, (también llamada controlador de video), es un componente electrónico requerido para generar una señal de video que se manda a una pantalla de video por medio de un cable. La tarjeta de video se encuentra normalmente en la placa de sistema de la computadora o en una placa de expansión. La tarjeta gráfica reúne toda la información que debe visualizarse en pantalla y actúa como interfaz entre el procesador y el monitor; la información es enviada a éste por la placa luego de haberla recibido a través del sistema de buses. Una tarjeta gráfica se compone, básicamente, de un controlador de video, de la memoria de pantalla o RAM video, y el generador de caracteres, y en la actualidad también poseen un acelerador de gráficos. El controlador de video va leyendo a intervalos la información almacenada en la RAM video y la transfiere al monitor en forma de señal de video; el número de veces por segundo que el contenido de la RAM video es leído y transmitido al monitor en forma de señal de video se conoce como frecuencia de refresco de la pantalla. Entonces, como ya dijimos antes, la frecuencia depende en gran medida de la calidad de la placa de video.
+        <br>
+        <br>
+        <h2>3.2 Aplicaciones</h2>
+        <br>
+        El Chipset es el que hace posible que la placa base funcione como eje del sistema, dando soporte a varios componentes e interconectándolos de forma que se comuniquen entre ellos haciendo uso de diversos buses. Es uno de los pocos elementos que tiene conexión directa con el procesador, gestiona la mayor parte de la información que entra y sale por el bus principal del procesador, del sistema de vídeo y muchas veces de la memoria RAM. En el caso de los computadores PC, es un esquema de arquitectura abierta que establece modularidad: el Chipset debe tener interfaces estándar para los demás dispositivos. Esto permite escoger entre varios dispositivos estándar, por ejemplo en el caso de los buses de expansión, algunas tarjetas madre pueden tener bus PCI-Express y soportar diversos tipos de tarjetas de distintos anchos de bus (1x, 8x, 16x). En el caso de equipos portátiles o de marca, el chipset puede ser diseñado a la medida y aunque no soporte gran variedad de tecnologías, presentará alguna interfaz de dispositivo.
+        <br>
+        <br>
+        <h3>3.2.1 Entrada y Salida</h3>
+        <br>
+        Las computadoras electrónicas modernas son una herramienta esencial en muchas áreas: industria, gobierno, ciencia, educación, en realidad en casi todos los campos de nuestras vidas. El papel que juegan los dispositivos periféricos de la computadora es esencial; sin tales dispositivos ésta no sería totalmente útil. A través de los dispositivos periféricos podemos introducir a la computadora datos que nos sea útiles para la resolución de algún problema y por consiguiente obtener el resultado de dichas operaciones, es decir; poder comunicarnos con la computadora. La computadora necesita de entradas para poder generar salidas y éstas se dan a través de dos tipos de dispositivos periféricos existentes: • Dispositivos periféricos de entrada. • Dispositivos periféricos de salida.
+        <br>
+        <br>
+        <h3>3.2.2 Almacenamiento</h3>   
+        <br>
+        Debido a la cantidad de información que manejamos actualmente, los dispositivos de almacenamiento se han vuelto casi tan importantes como el mismísimo computador. Aunque actualmente existen dispositivos para almacenar que superan las 650 MB de memoria, aún seguimos quejándonos por la falta de capacidad para transportar nuestros documentos y para hacer Backups de nuestra información más importante. Todo esto sucede debido al aumento de software utilitario que nos permite, por dar un pequeño ejemplo, convertir nuestros Cds en archivos de Mp3. El espacio en nuestro Disco duro ya no es suficiente para guardar tal cantidad de información; por lo que se nos es de urgencia conseguir un medo alternativo de almacenamiento para guardar nuestros Cds en Mp3 o los programas que descargamos de Internet. Disco duro, en los ordenadores o computadoras, unidad de almacenamiento permanente de gran capacidad. Está formado por varios discos apilados —dos o más—, normalmente de aluminio o vidrio, recubiertos de un material ferromagnético. Como en los disquetes, una cabeza de lectura/escritura permite grabar la información, modificando las propiedades magnéticas del material de la superficie, y leerla posteriormente (La tecnología magnética, consiste en la aplicación de campos magnéticos a ciertos materiales cuyas partículas reaccionan a esa influencia, generalmente orientándose en unas determinadas posiciones que conservan tras dejar de aplicarse el campo magnético. Esas posiciones representan los datos, bien sean una canción, bien los bits que forman una imagen o un documento importante.); esta operación se puede hacer un gran número de veces.
+        <br>
+        <h3>3.2.3 Fuente de Alimentación</h3> 
+        <br>
+        Es un circuito que convierte la tensión alterna de la red industrial en una tensión prácticamente continua. Las fuentes de alimentación o fuentes de poder se pueden clasificar atendiendo a varios criterios: Fuentes analógicas: – sus sistemas de control son analógicos uentes de alimentación continuas [editar] Usualmente la entrada es una tensión alterna proveniente de la red eléctrica comercial y la salida es una tensión continua con bajo nivel de rizado. Constan de tres o cuatro etapas: • sección de entrada: compuesta principalmente por un rectificador, también tiene elementos de protección como fusibles, varistores, etc. • regulación: su misión es mantener la salida en los valores prefijados. • salida: su misión es filtrar, controlar, limitar, proteger y adaptar la fuente a la carga a la que esté conectada. Este tipo de fuentes pueden ser tanto lineales como conmutadas. Las fuentes lineales siguen el esquema: transformador, rectificador, filtro, regulación y salida. En primer lugar el transformador adapta los niveles de tensión y proporciona aislamiento galvánico. El circuito que convierte la corriente alterna en continua se llama rectificador, después suelen llevar un circuito que disminuye el rizado como un filtro de condensador. La regulación se consigue con un componente disipativo regulable. La salida puede ser simplemente un condensador. Las fuentes conmutadas tienen por esquema: rectificador, conmutador, transformador, otro rectificador y salida. La regulación se obtiene con el conmutador, normalmente un circuito PWM (Pulse Width Modulation) que cambia el ciclo de trabajo. Aquí las funciones del transformador son las mismas que para fuentes lineales pero su posición es diferente. El segundo rectificador convierte la señal alterna pulsante que llega del transformador en un valor continuo. La salida puede ser también un filtro de condensador o uno del tipo LC. Las ventajas de las fuentes lineales son una mejor regulación, velocidad y mejores características EMC. Por otra parte las conmutadas obtienen un mejor rendimiento, menor coste y tamaño.
+        <br>
+        <br>
+        <h2>3.3 Ambientes de Servicios</h2>
+        <br>
+        <h3>3.3.1 Negocios</h3>
+        <br>
+        <br>
+        La tecnología en general ha sido la causa principal y la acción más directa para la transformación del trabajo de las organizaciones en la posguerra del siglo XX. Tanto los bienes de capital «duros» (computadores, teléfonos, videos, facsímiles, grabadoras, etc.), como los programas y sistemas de información y comunicación en general, han incrementado enormemente la productividad y eficiencia de las organizaciones. Tenemos como ejemplos los siguientes: bases de datos en redes de todo orden y topología, sistemas de reservaciones en aerolíneas, sistemas de contabilidad y nóminas, archivos clínicos en centros de salud, sistemas de conmutación electrónica y un sinnúmero de otras aplicaciones a procesos administrativos. Esta inversión en recursos humanos y materiales que han efectuado las organizaciones en la segunda mitad del siglo XX, ofrece muchas soluciones y a la vez problemas de toda índole. Por ejemplo, en el área de investigación espacial, existen programas de simulación para misiones espaciales, en los cuales se valoran miles de variables antes de realizar físicamente el viaje. Asimismo, en áreas más convencionales como mercadotecnia, es posible analizar una multiplicidad de variables por programación lineal u otras herramientas analíticas en la etapa de diseño, con anterioridad al lanzamiento de un producto o servicio Tres modalidades son reconocibles en el trabajo de los sistemas de información, las que son: uso de procesos aritméticos, ejecución de funciones lógicas y, por último, implementación de operaciones de entrada/salida. Las operaciones aritméticas comprenden el procesamiento de datos por medio de cómputos elementales: adición y sustracción, multiplicación y división, tal como en el caso de un control de inventarías. Por otro lado, las funciones lógicas fijan pasos a seguir ante diferentes situaciones preestablecidas, tal es el caso del control de pago por horas suplementarias laboradas. Por último, las operaciones de entrada/salida constituyen un proceso en el cual la información es generada a través de una unidad central de procesamiento (CPU) para almacenamiento y uso posterior, como el caso de los sistemas de nómina de pagos, en los que se introduce un estándar de datos y sale un cheque.
+        <br>
+        <br>
+        <h3>3.3.2 Industria</h3>
+        <br>
+        La industria es el conjunto de procesos y actividades que tienen como finalidad transformar las materias primas en productos elaborados, de forma masiva. Existen diferentes tipos de industrias, según sean los productos que fabrican. Desde los comienzos de la revolución industrias hasta nuestros días, un principio de reorganización del trabajo se ha conservado inalterable, como articulo de fe: la división del trabajo. Ya Adam Smith señalo, cuando J.Watt perfeccionaba la maquina de vapor que la generación de riqueza se acrecienta con la división del trabajo. Aproximadamente un siglo después F.W.Taylor iniciaba con sus trabajos sobre la revolución de la productividad laboral. Esta propuesta metódica de Taylor consistía en analizar y dividir las tareas en una serie de movimientos simples y repetitivos cada uno de los cuales debía ejecutarse en forma precisa, sin tiempos muertos y con las herramientas adecuadas Las divisiones del trabajo y la metodología tayloriana aplicadas por una industria que se mecanizaba en forma creciente y estandarizaba sus herramientas y productos, condujeron inexorablemente a la especialización, la fabricación en serie, la línea de montaje y la producción masiva El crecimiento económico basado en la mecanización y la productividad laboral fue evidente mientras los trabajadores manuales de las industrias manufactureras, la minería, los transportes y la agricultura constituyan la fuerza laboral mayoritaria. Pero a partir de 1980, aproximadamente, mas de 2/3 de la población activa esta integrado por trabajadores no manuales, en administración y los servicios Las computadoras de altísimas prestaciones asociadas a un basto arsenal de software utilitario y costos que se han derrumbado, aumentan en forma sustancial la productividad del trabajo, ignorando en buena medida la división del trabajo y el Taylorismo Algunas empresas rediseñaron en forma drástica algunas de sus procesos internos dejando de lado aquellos principios y utilizando en plenitud las posibilidades inherentes a las computadoras y a las comunicaciones modernas Los resultados fueron espectaculares en materia de acortamiento de los tiempos de ejecución de los procesos, de reducción de personal y de calidad del trabajo
+        <br>
+        <br>
+        <h3>3.3.3 Comercio Electrónico</h3>
+        <br>
+        El desarrollo de estas tecnologías y de las telecomunicaciones ha hecho que los intercambios de datos crezcan a niveles extraordinarios, simplificándose cada vez mas y creando nuevas formas de comercio, y en este marco se desarrolla el Comercio Electrónico. Comercio Electrónico Se considera “Comercio Electrónico” al conjunto de aquellas transacciones comerciales y financieras realizadas a través del procesamiento y la transmisión de información, incluyendo texto, sonido e imagen. TIPOS DE TRANSACCIONES DE COMERCIO ELECTRONICO “Business to business” (entre empresas): Las empresas pueden intervenir como compradoras o vendedoras, o como proveedoras de herramientas o servicios de soporte para el comercio electrónico, instituciones financieras, proveedores de servicios de Internet, etc. “Business to consumers” (Entre empresa y consumidor): Las empresas venden sus productos y prestan sus servicios a través de un sitio Web a clientes que los utilizarán para uso particular. “Consumers to consumers” (Entre consumidor y consumidor): Es factible que los consumidores realicen operaciones entre sí, tal es el caso de los remates en línea. “Consumers to administrations” (Entre consumidor y administración): Los ciudadanos pueden interactuar con las Administraciones Tributarias a efectos de realizar la presentación de las declaraciones juradas y/o el pago de los tributos, obtener asistencia informativa y otros servicios. “Business to administrations” (Entre empresa y administración): Las administraciones públicas actúan como agentes reguladores y promotores del comercio electrónico y como usuarias del mismo. VENTAJAS DEL COMERCIO ELECTRÓNICO Para las Empresas: – Desaparecen los límites geográficos y de tiempo. – Disponibilidad las 24 horas del día, 7 días a la semana, todo el año. – Reducción considerable de inventarios. – Agilizar las operaciones del negocio. – Menos inversión en los presupuestos publicitarios. – Reducción de precios por el bajo coste del uso de Internet en comparación con otros medios de promoción, lo cual implica mayor competitividad. – Globalización y acceso a mercados potenciales de millones de clientes. Para los clientes: – Un medio que da poder al consumidor de elegir en un mercado global acorde a sus necesidades. – Rapidez al realizar los pedidos. – Servicio pre y post-venta on-line. – Reducción de la cadena de distribución, lo que le permite adquirir un producto a un mejor precio. – Mayor interactividad y personalización de la demanda. – Información inmediata sobre cualquier producto, y disponibilidad de acceder a la información en el momento que así lo requiera. – Permite el acceso a más información. DESVENTAJAS DEL COMERCIO ELECTRÓNICO Desconocimiento de la empresa: No conocer la empresa que vende es un riesgo del comercio electrónico, ya que ésta puede estar en otro país o en el mismo, pero en muchos casos las “empresas” o “personas-empresa” que ofrecen sus productos o servicios por Internet ni siquiera están constituidas legalmente en su país y no se trata más que de gente que está “probando suerte en Internet”. Forma de Pago: Aunque ha avanzado mucho el comercio electrónico, todavía no hay una transmisión de datos segura el 100%. Y esto es un problema pues nadie quiere dar sus datos de la Tarjeta de Crédito por Internet. Poder volver (post y pre-venta):Con todo ello podemos reclamar en caso de ser necesario o pedir un servicio “post-venta”. Al conocerlo sabemos donde poder ir. El cliente espera recibir una atención “pre-venta” o “post-venta”. FACTORES A CONSIDERAR EN COMERCIO ELECTRÓNICO Existen muchos aspectos abiertos en torno al comercio electrónico; entre ellos podemos destacar, la validez de la firma electrónica, la legalidad de un contrato electrónico, las violaciones de marcas y derechos de autor, pérdida de derechos sobre las marcas, pérdida de derechos sobre secretos comerciales y responsabilidades”. Por esto existen leyes aplicables para el comercio electrónico y lo anterior mencionado.
+
+
+
+    </div>
+    </p>
+   </body>

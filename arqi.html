@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arquitectura de Computadoras</title>
+        <link rel="stylesheet" href="arqi.css">
+    </head>
+   <body>
+       <header>
+           <h1>Arquitectura de Computadoras</h1>
+           <nav class="navegacion">
+           <ul class="menu">
+            <li><a href="curso.html">ACERCA DEL CURSO</a></li>
+            <li><a href="#">UNIDADES</a>
+                <ul class="submenu">
+                <li><a href="arqi.html">UNIDAD1</a></li>
+                <li><a href="unidad2.html">UNIDAD2</a></li>
+                <li><a href="unidad3.html">UNIDAD3</a></li>
+                <li><a href="unidad4.html">UNIDAD4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">PROCESADORES</a>
+                <ul class="submenu">
+                    <li><a href="index.html">PROCESADORES INTEL</a></li>
+                    <li><a href="Procesadores AMD (Published)/index.html">PROCESADORES AMD</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+       <div id="general">
+           <nav>
+            <h2>Unidad 1: Arquitecturas de cómputo</h2>
+           </nav>
+        <br>
+        <h2>1.1 modelos de arquitecturas de computo</h2>
+        <br>
+        <p>
+        Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío. Aun son usadas en procesadores empotrados de gama baja y son la base de la mayoría de las arquitecturas modernas.
+        <br>
+        Existen dos modelos que sobresalen en este tipo de arquitecturas:
+        <br>
+            <li>Von Newman</li>
+            <li>Harvard</li>
+        <br>
+        <h4>Arquitectura Von Newman</h4>
+        Esta describe una arquitectura de diseño para un computador digital electrónico con partes que constan de una unidad de procesamiento que contiene una unidad aritmético lógica y registros del procesador, una unidad de control que contiene un registro de instrucciones y un contador de programa, una memoria para almacenar tanto datos como instrucciones, almacenamiento masivo externo, y mecanismos de entrada y salida.
+        <br>
+        <br>
+        <h4>Arquitectura Harvard</h4>
+        Esta arquitectura surgió en la universidad del mismo nombre, poco después de que la arquitectura Von Newman apareciera en la universidad de Princeton. Al igual que en la arquitectura Von Newman, el programa se almacena como un código numérico en la memoria, pero no en el mismo espacio de memoria ni en el mismo formato que los datos. Por ejemplo, se pueden almacenar las instrucciones en doce bits en la memoria de programa, mientras los datos de almacenan en 8 bits en una memoria aparte.
+        <br>
+        El hecho de tener un bus separado para el programa y otro para los datos permite que se lea el código de operación de una instrucción, al mismo tiempo se lee de la memoria de datos los operados de la instrucción previa. Así se evita el problema del cuello de botella de Von Newman
+        <br>
+        <br>
+        <h2>1.1.2 Segmentadas</h2>
+        Las arquitecturas segmentadas o con segmentación del cauce buscan mejorar el desempeño realizando paralelamente varias etapas del ciclo de instrucción al mismo tiempo.
+        <br>
+        El procesador se divide en varias unidades funcionales independientes y se dividen entre ellas el procesamiento de las instrucciones
+        <br>
+        En un procesador con segmentación del cause, cada una de estas etapas se asigna a una unidad funcional diferente, la búsqueda a la unidad de búsqueda y la ejecución a la unidad de ejecución. Estas unidades pueden trabajar en forma paralela en instrucciones diferentes. Estas unidades se comunican por medio de una cola de instrucciones en la que la unidad de búsqueda coloca los códigos de instrucción que leyó para que la unidad de ejecución los tome de la cola y los ejecute.
+        <br>
+        <br>
+        <h3>1.1.2 De Multiprocesamiento</h3>
+        Cuando se desea incrementar el desempeño más haya de lo que permite la técnica de segmentación del cauce (limite teórico de una instrucción por ciclo de reloj), se requiere utilizar más de un procesador para la ejecución del programa de aplicación.
+        Las CPU de multiprocesamiento se clasifican de la siguiente manera:
+        <br>
+        <br>
+
+            <li>SISO – (Single Instruction, Single Operand) computadoras independientes</li>
+            <li>SIMO – (Single Instruction, Multiple Operand) procesadores vectoriales</li>
+            <li>MIMO – (Multiple Instruction, Multiple Operand ) sistemas SMP, Clusters</li>
+            <li>MISO – (Multiple Instruction, Single Operand) No implementado</li>
+
+        <br>
+        <br>
+        Procesadores vectoriales – Son computadoras pensadas para aplicar un mismo algoritmo numérico a una serie de datos matriciales, en especial en la simulación de sistemas físicos complejos.
+        <br>
+        En los sistemas SMP (Simetric Multiprocesesors), varios procesadores comparten la misma memoria principal y periféricos de I/O, Normalmente conectados por un bus común. Se conocen como simétricos, ya que ningún procesador toma el papel de maestro y los demás de esclavos, sino que todos tienen derechos similares en cuanto al acceso a la memoria y periféricos y ambos son administrados por el sistema operativo
+        <br>
+        <br>
+        <h2>1.2 Análisis de los componentes</h2>
+        <br>
+        <h3>1.2.1 Arquitecturas</h3>
+        <br>
+        <h4>1.2.1.1 Unidad central de procesamiento</h4>
+        La unidad central de procesamiento, UCP o CPU (por el acrónimo en inglés de central processing unit), o simplemente el procesador o microprocesador, es el componente del computador y otros dispositivos programables, que interpreta las instrucciones contenidas en los programas y procesa los datos. Los CPU proporcionan la característica fundamental de la computadora digital (la programabilidad) y son uno de los componentes necesarios encontrados en las computadoras de cualquier tiempo, junto con el almacenamiento primario y los dispositivos de entrada/salida. Se conoce como microprocesador el CPU que es manufacturado con circuitos integrados. Desde mediados de los años 1970, los microprocesadores de un solo chip han reemplazado casi totalmente todos los tipos de CPU, y hoy en día, el término "CPU" es aplicado usualmente a todos los microprocesadores
+        <br>
+        <br>
+        <h4>1.2.1.2 Unidad Aritmética lógica</h4>
+        En computación, la unidad aritmética lógica o unidad aritmético-lógica, también conocida como ALU (siglas en inglés de arithmetic logic unit), es un circuito digital que realiza operaciones aritméticas (suma, resta) y operaciones lógicas (SI, Y, O, NO) entre los valores de los argumentos (uno o dos)
+        <br>   
+        Por mucho, los circuitos electrónicos más complejos son los que están construidos dentro de los chips de microprocesadores modernos. Por lo tanto, estos procesadores tienen dentro de ellos un ALU muy complejo y potente. De hecho, un microprocesador moderno (y los mainframes) puede tener múltiples núcleos, cada núcleo con múltiples unidades de ejecución, cada una de ellas con múltiples ALU.
+        <br>
+        Muchos otros circuitos pueden contener en el interior una unidad aritmético lógica: unidades de procesamiento gráfico como las que están en las GPU modernas, FPU como el viejo coprocesador matemático 80387, y procesadores digitales de señales como los que se encuentran en tarjetas de sonido, lectoras de CD y los televisores de alta definición. Todos estos tienen en su interior varias ALU potentes y complejas
+        <br>
+        <br>
+        <h4>1.2.1.3 Registros</h4>
+        un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador, que permite guardar transitoriamente y acceder a valores muy usados, generalmente en operaciones matemáticas.
+        <br>
+        Los registros están en la cumbre de la jerarquía de memoria, y son la manera más rápida que tiene el sistema de almacenar datos. Los registros se miden generalmente por el número de bits que almacenan; por ejemplo, un "registro de 8 bits" o un "registro de 32 bits". Los registros generalmente se implementan en un banco de registros, pero antiguamente se usaban biestables individuales, memoria SRAM o formas aún más primitivas.
+        <br>
+        <br>
+        <h4>1.2.1.4 Buses</h4>
+        Bus es una palabra inglesa que significa “transporte”. En arquitectura de computadores, un bus puede conectar lógicamente varios periféricos sobre el mismo conjunto de cables. Aplicada a la informática, se relaciona con la idea de las transferencias internas de datos que se dan en un sistema computacional en funcionamiento. En el bus todos los nodos reciben los datos aunque no se dirijan a todos éstos, los nodos a los que no van dirigidos los datos simplemente los ignoran. Por tanto, un bus es un conjunto de conductores eléctricos en forma de pistas metálicas impresas sobre la tarjeta madre del computador, por donde circulan las señales que corresponden a los datos binarios del lenguaje máquina con que opera el Microprocesador.
+        <br>
+        <br>
+        <h3>1.2.2 Memoria</h3>
+        <h4>1.2.2.1 Conceptos básicos del manejo de la memoria</h4>
+        la memoria (también llamada almacenamiento) se refiere a parte de los componentes que forman parte de una computadora. Son dispositivos que retienen datos informáticos durante algún intervalo de tiempo. Las memorias de computadora proporcionan una de las principales funciones de la computación moderna, la retención o almacenamiento de información. Es uno de los componentes fundamentales de todas las computadoras modernas que, acoplados a una unidad central de procesamiento (CPU por su sigla en inglés, central processing unit), implementa lo fundamental del modelo de computadora de Arquitectura de von Neumann, usado desde los años 1940. Dispositivo basado en circuitos que posibilitan el almacenamiento limitado de información y su posterior recuperación. Las memorias suelen ser de rápido acceso, y pueden ser volátiles o no volátiles. La clasificación principal de memorias son RAM y ROM. Estas memorias son utilizadas para almacenamiento primario.
+        <br>
+        <br>
+        <h4>1.2.2.3 Memoria Principal</h4>
+        Memoria primaria (MP), memoria principal, memoria central o memoria interna es la memoria de la computadora donde se almacenan temporalmente tanto los datos como los programas que la unidad central de procesamiento (CPU) está procesando o va a procesar en un determinado momento. Por su función, la MP debe ser inseparable del microprocesador o CPU, con quien se comunica a través del bus de datos y el bus de direcciones. El ancho del bus determina la capacidad que posea el microprocesador para el direccionamiento de direcciones en memoria.
+        <br>
+        <br>
+        <h4>1.2.2.3 Memoria Cache</h4>
+        La memoria caché es la memoria de acceso rápido de una computadora, que guarda temporalmente las últimas informaciones procesadas. La memoria caché es un búfer especial de memoria que poseen las computadoras, que funciona de manera similar a la memoria principal, pero es de menor tamaño y de acceso más rápido. Es usada por el microprocesador para reducir el tiempo de acceso a datos ubicados en la memoria principal que se utilizan con más frecuencia.
+        <br>
+        <br>
+        <h3>1.2.3 Manejo de la entrada/salida</h3>
+        <h4>1.2.3.1 Módulos de la entrada/salida</h4>
+        En primer termino hablaremos de los dispositivos de entrada, que como su nombre lo indica, sirven para introducir datos (información) a la computadora para su proceso. Los datos se leen de los dispositivos de entrada y se almacenan en la memoria central o interna. Los dispositivos de entrada convierten la información en señales eléctricas que se almacenan en la memoria central. Los dispositivos de entrada típicos son los teclados, otros son: lápices ópticos, palancas de mando (joystick), CD-ROM, discos compactos (CD), etc. Hoy en día es muy frecuente que el usuario utilice un dispositivo de entrada llamado ratón que mueve un puntero electrónico sobre una pantalla que facilita la interacción usuario-máquina.
+        <br>
+        <br>
+        <h4>1.2.3.2 Entrada salida programada</h4>
+        Los dispositivos de Entrada y Salida permiten la comunicación entre la computadora y el usuario.
+        <br>
+        <br>
+        <h4>1.2.3.3 Entrada salida mediante interrupciones</h4>
+        El problema con E/S programada es que el CPU tiene que esperar un tiempo considerable a que el módulo de E/S en cuestión esté preparado para recibir o transmitir los datos. El CPU debe estar comprobando continuamente el estado del módulo de E/S. Se degrada el desempeño del sistema. Una alternativa es que el CPU tras enviar una orden de E/S continúe realizando algún trabajo útil. El módulo de E/S interrumpirá al CPU para solicitar su servicio cuando esté preparado para intercambiar datos. El CPU ejecuta la transferencia de datos y después continúa con el procesamiento previo. Se pueden distinguir dos tipos: E/S síncrona y E/S asíncrona E/S Síncrona: cuando la operación de E/S finaliza, el control es retornado al proceso que la generó. La espera por E/S se lleva a cabo por medio de una instrucción wait que coloca al CPU en un estado ocioso hasta que ocurre otra interrupción. Aquellas máquinas que no tienen esta instrucción utilizan un loop. Este loop continua hasta que ocurre una interrupción transfiriendo el control a otra parte del sistema de operación. Sólo se atiende una solicitud de E/S por vez
+        <br>
+        <br>
+        <h4>1.2.3.4 Acceso directo a memoria</h4>
+        El acceso directo a memoria (DMA, del inglés direct memory access) permite a cierto tipo de componentes de una computadora acceder a la memoria del sistema para leer o escribir independientemente de la unidad central de procesamiento (CPU) principal. Muchos sistemas hardware utilizan DMA, incluyendo controladores de unidades de disco, tarjetas gráficas y tarjetas de sonido. DMA es una característica esencial en todos los ordenadores modernos, ya que permite a dispositivos de diferentes velocidades comunicarse sin someter a la CPU a una carga masiva de interrupciones. Una transferencia DMA consiste principalmente en copiar un bloque de memoria de un dispositivo a otro. En lugar de que la CPU inicie la transferencia, la transferencia se lleva a cabo por el controlador DMA, Cabe destacar que aunque no se necesite a la CPU para la transacción de datos, sí se necesita el bus del sistema (tanto bus de datos como bus de direcciones), por lo que existen diferentes estrategias para regular su uso
+        <br>
+        <br>
+        <h4>1.2.3.5 Canales y procesadores de entrada/salida</h4>
+        En las entradas y salidas que se ejecutan desde el procesador entran tres conceptos que se deben conocer. El DMA Los Canales Y las instrucciones DMA Con un incremento moderado de la lógica asociada con el periférico se puede lograr transferir un bloque de información a o desde la memoria principal sin la intervención directa de la UCP. Esto requiere que los periféricos o los controladores de E/S sean capaces de generar direcciones de memoria y transferir datos a o desde el bus del sistema. La UCP es todavía la responsable de iniciar la transferencia de cada bloque. 
+        <br>
+        <br>
+        <h3>1.2.4 Buses</h3> 
+        <h4>1.2.4.1 Tipos de buses</h4>
+        BUS PARALELO
+        Un bus paralelo tiene conexiones físicas complejas, pero la lógica es sencilla, que lo hace útil en sistemas con poco poder de cómputo. En los primeros microcomputadores, el bus era simplemente la extensión del bus del procesador y los demás integrados “escuchan” la línea de direcciones, en espera de recibir instrucciones.
+        <li>Las Líneas de Dirección con el que se desea establecer comunicación.</li>
+        <li>Las Líneas de Control son las encargadas de enviar señales de arbitraje entre los dispositivos. Entre las más importantes están las líneas de interrupción, DMA y los indicadores de estado.        </li>
+        <li>Las Líneas de Datos trasmiten los bits, de manera que por lo general un bus tiene un ancho que es potencia de 2.</li>
+        <br>
+        BUS SERIE
+        En este los datos son enviados, bit a bit y se reconstruyen por medio de registros o rutinas de software. Está formado por pocos conductores y su ancho de banda depende de la frecuencia. Es usado desde hace menos de 10 años en buses para discos duros, tarjetas de expansión y para el bus del procesador.
+        <br>
+        <br>
+        <h4>1.2.4.2 Estructura de los buses</h4>
+        <br>
+        Existen dos organizaciones físicas de operaciones E/S que tienen que ver con los buses que son:
+        <li>Bus único</li>        
+        <li>Bus dedicado</li>  
+        <br>
+        La primera gran diferencia entre estas dos tipos de estructuras es que el bus único no permite un controlador DMA (todo se controla desde la CPU), mientras que el bus dedicado si que soporta este controlador.
+        <br>
+        El bus dedicado trata a la memoria de manera distinta que a los periféricos (utiliza un bus especial) al contrario que el bus único que los considera a ambos como posiciones de memoria (incluso equipara las operaciones E/S con las de lectura/escritura en memoria). Este bus especial que utiliza el bus dedicado tiene 4 componentes fundamentales
+        <li>Datos: Intercambio de información entre la CPU y los periféricos.</li>        
+        <li>Control: Lleva información referente al estado de los periféricos (petición de interrupciones).</li>
+        <li>Direcciones: Identifica el periférico referido.</li>        
+        <li>Sincronización: Temporiza las señales de reloj.</li>
+        <br>
+        <h4>1.2.4.3 Jerarquías de buses</h4>
+        El computador tiene diferentes tipos de buses. Los computadores modernos tienen por lo menos 4 buses diferentes. Se les considera una jerarquía porque cada bus se conecta al nivel superior a él dentro del computador integrando así todas las partes del computador. Cada uno es generalmente más lento que el que se encuentra sobre él (siendo el bus del procesador el más rápido tratándose de que este es el dispositivo más rápido del computador)
+        <br>
+        <br>
+        <h4>1.2.5 Interrupciones</h4>
+        En el contexto de la informática, una interrupción (del inglés Interrupt Request, también conocida como petición de interrupción) es una señal recibida por el procesador de un ordenador, indicando que debe "interrumpir" el curso de ejecución actual y pasar a ejecutar código específico para tratar esta situación. Una interrupción es una suspensión temporal de la ejecución de un proceso, para pasar a ejecutar una subrutina de servicio de interrupción, la cual, por lo general, no forma parte del programa, sino que pertenece al sistema operativo o al BIOS). Una vez finalizada dicha subrutina, se reanuda la ejecución del programa. Las interrupciones surgen de la necesidad que tienen los dispositivos periféricos de enviar información al procesador principal de un sistema informático. La primera técnica que se empleó para esto fue el polling, que consistía en que el propio procesador se encargara de sondear los dispositivos periféricos cada cierto tiempo para averiguar si tenía pendiente alguna comunicación para él
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wYlUILV8F50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </p>
+   </body> 
